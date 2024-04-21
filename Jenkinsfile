@@ -7,6 +7,7 @@ pipeline {
     stage("build"){
       steps{
         echo 'Building the application'
+        adb devices start-server
       }
     }
 
